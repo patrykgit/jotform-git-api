@@ -1,7 +1,4 @@
 <?php
-$dir = "/path/to/your/repo/";
-$output = array();
-chdir($dir);
 exec("git log",$output);
 $history = array();
 foreach($output as $line){
